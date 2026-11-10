@@ -1,0 +1,130 @@
+---
+name: 🐛 Bug Report
+description: If something isn't working as expected.
+labels: ["kind:bug", "needs-triage"]
+body:
+  - type: textarea
+    attributes:
+      label: What is actually happen?
+      description: >
+        Describe the issue you are seeing.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What is expected to happen?
+      description: >
+        Describe what you are expecting to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Provide reproducible steps.
+      description: >
+        What is the exact steps to reproduce this issue?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: (Optional) Reproduction Repository
+      description: >
+        Please provide a link to a reproduction repository.
+        Include the branch, in the reproducible steps textarea if on a branch, other then main.
+        Example: https://github.com/apache/cordova-common.git
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Cordova CLI Version
+      description: >
+        Run `cordova --version` and paste the output here.
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Cordova Platform
+      description: >
+        Select the platform(s) which this issue appears in
+      multiple: true
+      options:
+        - cordova-android
+        - cordova-browser
+        - cordova-electron
+        - cordova-ios
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Host Operating System
+      description: >
+        Provide the operating system(s) and version information which you are experiencing this issue on.
+        Example: macOS 27.2.1, Ubuntu 26.10, Windows 11
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Cordova Info Output
+      description: >
+        Run `cordova info` and paste the output here.
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?
+      description: >
+        This is not required but helps let others know that your willing work on and submit a PR.
+      options:
+        - label: >
+            Yes, I am willing to submit a PR!
+          required: false
+
+  - type: checkboxes
+    attributes:
+      label: Have you searched for existing GitHub tickets?
+      description: >
+        This helps the community by reducing duplications in reports and centralize all information in one open ticket.
+        If there was a similar report but has been closed, please open and incude the previous ticket as a reference.
+      options:
+        - label: >
+            I have confirmed that I searched for existing GitHub issues before making this report.
+          required: true
+
+  - type: checkboxes
+    attributes:
+      label: Have you manually tested and confirmed that this issue is reproducible and the report is accurate?
+      description: >
+        This helps if the report was fully tested manually to confirm the report.
+        Additionally, reproducablity was confirmed and provided as steps above.
+      options:
+        - label: >
+            I confirm that I had manually tested this report and confirm its reproducablity.
+          required: true
+
+  - type: checkboxes
+    attributes:
+      label: Have you updated your Cordova tooling to the most recent version?
+      description: >
+        This helps identify if the issue was already resolved.
+        Usually older versions are no longer supported and is recommended to upgrade to the latest releases.
+      options:
+        - label: >
+            I have confirmed that I updated all Cordova tooling to the most recent version.
+          required: false
+
+  - type: checkboxes
+    attributes:
+      label: Have you used any LLM in the research or creation of this ticket?
+      description: >
+        This helps identify where the report originates from.
+      options:
+        - label: >
+            I have used LLM tools/services in the research and creation of this ticket.
+          required: false

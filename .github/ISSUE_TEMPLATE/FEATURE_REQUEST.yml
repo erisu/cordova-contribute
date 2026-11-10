@@ -1,0 +1,113 @@
+---
+name: 🚀 Feature Request
+description: A suggestion for a new functionality
+labels: ["kind:enhancement", "needs-triage"]
+body:
+  - type: textarea
+    attributes:
+      label: Motivation Behind Feature
+      description: >
+        Why should this feature be implemented? What problem does it solve?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Feature Description
+      description: >
+        Describe your feature request in detail.
+
+
+        Please provide any code examples or screenshots of what this feature would look like.
+
+
+        Are there any drawbacks? Will this break anything for existing users?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives or Workarounds
+      description: >
+        Describe alternatives or workarounds you are currently using.
+
+
+        Are there ways to do this with existing functionality?
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?
+      description: >
+        This is not required but helps let others know that your willing work
+        on and submit a PR.
+      options:
+        - label: >
+            Yes, I am willing to submit a PR!
+          required: false
+
+  - type: checkboxes
+    attributes:
+      label: Have you searched to see if this request was already made?
+      description: >
+        This helps the community by reducing duplications and centralize all
+        information.
+
+
+        If there is a similar open report, please contribute to the existing ticket.
+        If the similar ticket was closed, a new ticket will be requied and include a
+        link to that previous ticket.
+
+
+        Additionally, please review the reasons why it was closed as it might get
+        rejected for the same reasons.
+      options:
+        - label: >
+            I have confirmed that I searched for existing requests before making this
+            report.
+          required: true
+
+  - type: checkboxes
+    attributes:
+      label: LLM Usage Notification
+      description: >
+        This helps identify if LLMs were used in the creation of this request ticket,
+        sample code, proper usage notification and is acceptable under the Apache-2.0
+        license.
+
+
+        If sample code was created by a LLM, please include the following information
+        along side the code blocks with its associated model using the following tag:
+        `Generated-by: <model-name-and-version>`
+
+
+        Additionally, some LLMs have strict terms of service or may have trained its model
+        on source code that prevents its output from being distributed under the Apache-2.0
+        license.
+      options:
+        - label: >
+            I have used LLM tools or services to create this feature request ticket.
+          required: false
+        - label: >
+            I have used LLM tools or services in generating the sample code on this ticket.
+          required: false
+        - label: >
+            I have properly reported which LLM model was used with the `Generated-by:` tag.
+          required: false
+        - label: >
+            I have read and confirmed that the LLM tool's or service's Terms of Usage and
+            Service License Agreement does not conflict with the Apache-2.0 license.
+          required: false
+
+  - type: checkboxes
+    attributes:
+      label: Are you the original author of the sample code?
+      description: >
+        This helps us understand if you are the original author, or authorized user, of the
+        sample code and will be contributing the code under the Apache-2.0 license.
+      options:
+        - label: >
+            I confirm that I am the owner or authorized user of the sample code and will
+            contribute the code under the Apache-2.0 license.
+          required: false
